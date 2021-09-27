@@ -9,8 +9,10 @@ from database import ThreadedGraph
 from utils import json_task
 from variables import DATABASE, TTL, VERSION
 
-if not os.path.exists("db"):
-    os.makedirs("db")
+folder = os.path.dirname(DATABASE)
+if folder != "" and not os.path.exists(folder):
+    os.makedirs(folder)
+
 
 # graphs
 G = ThreadedGraph(Graph(DATABASE))
