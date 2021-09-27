@@ -1,4 +1,4 @@
-kinbaku
+nodlite
 sanic>=21.6.2
 sanic-cors>=1.0.0
 aiocache>=0.11.1
